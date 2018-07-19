@@ -65,6 +65,12 @@ module.exports.loop = function () {
 //        }
 //    }
 
+    for(var id in Game.structures){
+        if(Game.structures[id].structureType == STRUCTURE_TOWER){
+            structure.tower.run(Game.structures[id])
+        }
+    }
+
     // setup some minimum numbers for different roles
     var minimumNumberOfHarvesters = 2;
     var minimumNumberOfUpgraders = 1;
