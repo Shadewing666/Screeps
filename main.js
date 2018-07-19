@@ -50,6 +50,10 @@ module.exports.loop = function () {
         }
     }
 
+    var structure = {
+        tower: require('structure.tower')
+    }
+
     // find all towers
 //    var towers = Game.rooms[HOME].find(FIND_STRUCTURES, {
 //        filter: (s) => s.structureType == STRUCTURE_TOWER
